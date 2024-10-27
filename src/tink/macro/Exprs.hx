@@ -266,7 +266,7 @@ class Exprs {
     return e.pos.error(reason);
 
   static public inline function toString(e:Expr):String
-    return new haxe.macro.Printer().printExpr(e);
+    return new tink.macro.Printer().printExpr(e);
 
   static public inline function at(e:ExprDef, ?pos:Position)
     return {
